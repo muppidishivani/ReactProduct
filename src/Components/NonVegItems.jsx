@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart, fetchItems } from '../Store';
+import { addToCart} from '../Store';
 
 const NonVegItems = () => {
   const dispatch = useDispatch();
@@ -40,9 +40,9 @@ const NonVegItems = () => {
     );
   };
 
-  useEffect(() => {
-    dispatch(fetchItems());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchItems());
+  // }, [dispatch]);
 
   return (
     <div className="non-veg-items-container">

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { addToCart, fetchItems } from '../Store';
+import { addToCart } from '../Store';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const VegItems = () => {
@@ -18,9 +18,9 @@ const VegItems = () => {
 
   const brands = [...new Set(vegItems.map((item) => item.brand))];
 
-  useEffect(() => {
-    dispatch(fetchItems());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchItems());
+  // }, [dispatch]);
 
   const getFilteredItems = () => {
     let filteredItems = vegItems;
