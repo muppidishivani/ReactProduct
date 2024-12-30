@@ -79,7 +79,7 @@ const VegItems = () => {
 
         {/* Brand Filter */}
         <div className="col-md-6 text-center text-primary">
-          <h5 className="text-danger fw-bold mb-2 text-primar fs-4">Filter by Brand:</h5>
+          <h5 className="text-danger fw-bold mb-2 fs-4">Filter by Brand:</h5>
           <div className="d-flex flex-wrap justify-content-center">
             {brands.map((brand) => (
               <div key={brand} className="form-check form-check-inline">
@@ -101,7 +101,7 @@ const VegItems = () => {
       </div>
 
       {/* Display filtered items */}
-      <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 g-60 justify-content-center">
+      <div className="row row-cols-2 row-cols-md-3 row-cols-lg-3 justify-content-center">
         {filteredItems.length > 0 ? (
           filteredItems.map((item) => (
             <div key={item.id} className="col d-flex justify-content-center">
@@ -110,7 +110,7 @@ const VegItems = () => {
                   src={`/Image/${item.image}`}
                   alt={item.name}
                   className="card-img-top img-fluid rounded-3"
-                  style={{ height: '350px', width: '150%', objectFit: 'cover' }}
+                  style={{ height: '350px', objectFit: 'cover' }}
                 />
                 <div className="card-body d-flex flex-column">
                   <h5 className="card-title text-truncate">{item.name}</h5>
