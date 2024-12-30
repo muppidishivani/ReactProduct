@@ -1,0 +1,134 @@
+.nav-link:hover {
+    background-color: #007bff !important; /* Adjust the background color */
+  }
+  .center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+/* Fullscreen center container */
+.fullscreen-center {
+  display: flex; /* Flexbox layout */
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  min-height: 100vh; /* Ensure full viewport height */
+  width: 100vw; /* Full viewport width */
+  margin: 0; /* Remove any margins */
+  background-color: #f8f9fa; /* Light gray background */
+  overflow: hidden; /* Prevent extra scrolling on the page */
+}
+
+/* Card styling */
+.card {
+  width: 90%; /* Responsive width */
+  max-width: 800px; /* Limit maximum width */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  background-color: #ffffff; /* White background */
+  overflow: hidden; /* Hide overflowing content */
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  transition: max-height 0.3s ease; /* Smooth height transitions */
+}
+
+/* Header styling */
+.card-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #007bff; /* Primary color */
+  color: #fff; /* White text */
+  text-align: center;
+}
+
+/* Card content styling */
+.card-body {
+  padding: 1rem;
+  flex-grow: 1; /* Allow content to expand the card */
+  overflow-y: auto; /* Scrollable content when overflow occurs */
+  max-height: calc(90vh - 10rem); /* Ensure card doesn't exceed viewport height */
+}
+
+/* Footer button styling */
+.card-footer {
+  padding: 1rem;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+.card-footer .btn {
+  font-size: 1.2rem;
+  padding: 0.75rem;
+  font-weight: bold;
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Full width on smaller screens */
+    margin: 0 1rem; /* Add padding to the edges */
+    
+  }
+
+  .card-header {
+    font-size: 1.2rem; /* Smaller text for headers */
+  }
+
+  .card-footer .btn {
+    font-size: 1rem;
+  }
+}
+
+
+/*PerchaseHistory*/
+.purchase-history-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f8f9fa; /* Light background color */
+  margin: 0;
+  min-height: 100vh; /* Ensure full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.purchase-history-card {
+  width: 100%;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.purchase-history-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #28a745; /* Success green color */
+}
+
+.card-container {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card-header {
+  background-color: #007bff; /* Primary color */
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.list-group-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.empty-message {
+  text-align: center;
+}
+
